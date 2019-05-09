@@ -30,3 +30,15 @@ function stairsIn20(s) {
     ) * 20
   )
 }
+
+function stairsIn20(s) {
+  let total = 0
+  for (i = 0; i < s.length; i++) {
+    let dayCount = 0
+    for (j = 0; j < s[i].length; j++) {
+      dayCount += s[i][j]
+    }
+    total += dayCount
+  }
+  return total
+}
